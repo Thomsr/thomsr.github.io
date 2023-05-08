@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import NavBar from "./components/navbar/navbar"
+import Project from "./components/projects/project"
 
-function App() {
-  const [count, setCount] = useState(0)
+import Blob1 from "./svg/blob1.svg"
+import Blob2 from "./svg/blob2.svg"
+import Blob3 from "./svg/blob3.svg"
 
+import './app.css'
+
+export default function App() {
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <NavBar />
+      <div className="home">
+        <p id="thomas">Thomas</p>
+        <p id="rooskens">Rooskens</p>
+        <img id="blob2" src={Blob2} alt="blob2" />
+        <img id="blob1" src={Blob1} alt="blob1" />
+        <img id="blob3" src={Blob3} alt="blob3" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div id="project1">
+        <Project
+          title="DNA Sequence Storage"
+          text="Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.  Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+          orientation="left"
+        />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div id="project2">
+        <Project 
+          title="Language parse-tree"
+          text="Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+          orientation="right"
+        />
+      </div>
     </div>
   )
 }
-
-export default App

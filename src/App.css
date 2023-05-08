@@ -1,42 +1,82 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+#thomas {
+  position: absolute;
+  width: 419px;
+  height: 103px;
+  left: 396px;
+  top: 366px;
+
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 83px;
+  line-height: 103px;
+
+  background: linear-gradient(101.46deg, #D6D6D6 -13.93%, #8ACAFE 107.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#rooskens {
+  position: absolute;
+  width: 905px;
+  height: 180px;
+  left: 396px;
+  top: 443px;
+
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 145px;
+  line-height: 180px;
+
+
+  background: linear-gradient(101.46deg, #2196F3 -13.93%, #8ACAFE 107.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#blob1, #blob2, #blob3 {
+  position: absolute;
+  filter: blur(100px);
+  scale: 0.8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#blob1 {
+  width: 527.25px;
+  height: 516.39px;
+  left: 1019.93px;
+  top: 155.74px;
+
 }
 
-.card {
-  padding: 2em;
+#blob2 {
+  width: 546.31px;
+  height: 472.66px;
+  left: 1282.69px;
+  top: 467px;
 }
 
-.read-the-docs {
-  color: #888;
+#blob3 {
+  width: 504.4px;
+  height: 414.46px;
+  left: 960px;
+  top: 525.54px;
+}
+
+#project1 {
+  position: absolute;
+  width: 593px;
+  height: 292px;
+  left: 400px;
+  top: 1129px;
+}
+
+#project2 {
+  position: absolute;
+  width: 537px;
+  height: 267px;
+  left: 983px;
+  top: 1576px;  
 }
